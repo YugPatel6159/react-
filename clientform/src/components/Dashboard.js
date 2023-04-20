@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from "recharts";
+import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip } from "recharts";
 
 function Dashboard() {
 
@@ -21,7 +21,6 @@ const handleClick = (url) => {
       <XAxis dataKey="name"/>
       <YAxis />
       <Tooltip />
-      <Legend />
       <Bar dataKey="percentage" fill="blue"  onClick={(event) => handleClick(event.payload.url)}  />
     </BarChart>
     </div>
