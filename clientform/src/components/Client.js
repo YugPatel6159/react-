@@ -290,7 +290,7 @@ function Client() {
         {formik.errors.clientname && formik.touched.clientname ? <p className='text-danger'>{formik.errors.clientname}</p>:null}
         </div>
       </div>
-
+      
       <div className='row d-flex mt-2'>
         <div className="col-md-2">
         <label htmlFor="address" className='mt-2'>Address</label>
@@ -347,6 +347,7 @@ function Client() {
         </div>
         <div className='col-md-4'>
         <input type="date" name="date" id="date" className='form-control' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.date}/>
+        {formik.errors.date && formik.touched.date ? <p className='text-danger'>{formik.errors.date}</p>:null}
         </div>
       </div>
 
@@ -356,6 +357,8 @@ function Client() {
         </div>
         <div className='col-md-8'>
           <input type="text" name='consultant' className='form-control' id='consultant' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.consultant} />
+        {formik.errors.consultant && formik.touched.consultant ? <p className='text-danger'>{formik.errors.consultant}</p>:null}
+
         </div>
       </div>
 
@@ -365,6 +368,8 @@ function Client() {
         </div>
         <div className='col-md-8'>
           <input type="email" name='email' className='form-control' id='email' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email} />
+        {formik.errors.email && formik.touched.email ? <p className='text-danger'>{formik.errors.email}</p>:null}
+
         </div>
       </div>
 
@@ -390,6 +395,8 @@ function Client() {
         </div>
         <div className='col-md-8'>
           <input type="text" name='totalPrice' className='form-control' id='totalPrice' onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.totalPrice}/>
+        {formik.errors.totalPrice && formik.touched.totalPrice ? <p className='text-danger'>{formik.errors.totalPrice}</p>:null}
+
         </div>
       </div>
       <div className='d-flex justify-content-center mt-4'>
