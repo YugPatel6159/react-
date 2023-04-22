@@ -1,7 +1,6 @@
 import React from 'react';
 import Button from "@mui/material/Button";
-import Autocomplete from "@mui/material/Autocomplete";
-import { TextField, Box } from "@mui/material";
+import {  Box } from "@mui/material";
 import { useState } from "react";
 import Addproduct from "./Addproduct";
 import Productlist from './Productlist';
